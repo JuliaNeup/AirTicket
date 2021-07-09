@@ -42,4 +42,9 @@ public class AirTicketManagerTest {
 
         assertArrayEquals(expected, actual);
     }
+    @Test
+    public void shouldShowOffers(){
+        AirTicket[] expected = new AirTicket[]{four,three,two,five,one};
+        assertArrayEquals(expected,manager.showOffers());
+    }
 }

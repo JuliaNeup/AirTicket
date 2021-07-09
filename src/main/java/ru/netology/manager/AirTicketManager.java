@@ -24,4 +24,9 @@ public class AirTicketManager {
         }
         return result;
     }
+    public AirTicket[] showOffers() {
+        AirTicket[] result = repository.getAll();
+        Arrays.sort(result);
+        return result;
+    }
 }

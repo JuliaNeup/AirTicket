@@ -33,6 +33,9 @@ public class AirTicketRepository {
         }
         tickets = tmp;
     }
+    public AirTicket[] getAll() {
+        return tickets;
+    }
 
 }
 
