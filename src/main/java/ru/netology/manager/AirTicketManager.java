@@ -22,6 +22,7 @@ public class AirTicketManager {
                 result = tmp;
             }
         }
+        Arrays.sort(result);
         return result;
     }
     public AirTicket[] showOffers() {
